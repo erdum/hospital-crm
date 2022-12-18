@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->text('name');
             $table->text('designation');
+            $table->text('phone');
             $table->integer('nic');
             $table->timestamps();
         });

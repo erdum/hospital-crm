@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->text('type');
             $table->integer('block_floor');
-            $table->integer('block_number');
+            $table->char('block', 4);
             $table->boolean('unavailable');
             $table->timestamps();
         });

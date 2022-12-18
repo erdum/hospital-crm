@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('patient_id')->constrained('patients');
             $table->foreignId('room_id')->constrained('rooms');
-            $table->timestamp('check_in');
-            $table->timestamp('check_out');
+            $table->dateTime('check_in');
+            $table->dateTime('check_out');
             $table->timestamps();
         });
     }
