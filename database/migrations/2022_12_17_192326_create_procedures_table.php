@@ -20,6 +20,7 @@ return new class extends Migration
             $table->foreignId('physician_id')->constrained('physicians');
             $table->foreignId('nurse_id')->constrained('nurses');
             $table->foreignId('stay_id')->constrained('stays');
+            $table->foreignId('department_id')->constrained('departments');
             $table->date('undergoes_on');
             $table->integer('cost');
             $table->timestamps();
