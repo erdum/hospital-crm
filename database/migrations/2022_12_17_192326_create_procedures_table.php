@@ -23,6 +23,7 @@ return new class extends Migration
             $table->date('undergoes_on');
             $table->integer('cost');
             $table->timestamps();
+            $table->unique(['patient_id', 'stay_id', 'undergoes_on']);
         });
     }
 
