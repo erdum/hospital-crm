@@ -8,6 +8,7 @@ use App\Models\Patient;
 use App\Models\Physician;
 use App\Models\Room;
 use App\Models\Prescribes;
+use App\Models\Invoice;
 
 class Appointment extends Model
 {
@@ -31,5 +32,10 @@ class Appointment extends Model
     public function prescribes()
     {
         return $this->hasMany(Prescribes::class);
+    }
+
+    public function invoice()
+    {
+        return $this->hasOne(Invoice::class);
     }
 }

@@ -25,5 +25,6 @@ class DatabaseSeeder extends Seeder
         \App\Models\Medication::factory()->create();
         \App\Models\Prescribes::factory()->create();
         \App\Models\Procedure::factory()->create();
+        \App\Models\Invoice::factory()->create();
     }
 }
