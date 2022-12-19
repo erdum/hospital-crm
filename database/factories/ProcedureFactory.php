@@ -22,6 +22,7 @@ class ProcedureFactory extends Factory
             'physician_id' => 1,
             'nurse_id' => 1,
             'stay_id' => 1,
+            'department_id' => 1,
             'undergoes_on' => fake()->date(),
             'cost' => 100000
         ];
