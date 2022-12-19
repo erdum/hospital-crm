@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Patient;
 use App\Models\Physician;
 use App\Models\Room;
+use App\Models\Prescribes;
 
 class Appointment extends Model
 {
@@ -25,5 +26,10 @@ class Appointment extends Model
     public function room()
     {
         return $this->belongsTo(Room::class);
+    }
+
+    public function prescribes()
+    {
+        return $this->hasMany(Prescribes::class);
     }
 }
