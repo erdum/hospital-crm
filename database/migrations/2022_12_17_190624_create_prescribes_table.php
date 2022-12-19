@@ -21,6 +21,7 @@ return new class extends Migration
             $table->foreignId('appointment_id')->constrained('appointments');
             $table->text('dose');
             $table->timestamps();
+            $table->unique(['physician_id', 'patient_id', 'medication_id', 'recommended_on']);
         });
     }
 
